@@ -811,10 +811,10 @@ void app_main(void)
         ESP_LOGE(TAG, "esp32_bluetooth_init failed (err %d)", err);
         return;
     }
-/*
+
     ble_mesh_get_dev_uuid(dev_uuid);
 
-    // Initialize the Bluetooth Mesh Subsystem 
+    /* Initialize the Bluetooth Mesh Subsystem */ 
     err = ble_mesh_init();
     if (err) {
         ESP_LOGE(TAG, "Bluetooth mesh init failed (err %d)", err);
@@ -823,4 +823,5 @@ void app_main(void)
 
     wifi_console_init();
 }
-*/
+
+
